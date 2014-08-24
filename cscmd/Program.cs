@@ -18,7 +18,7 @@ namespace cscmd
 
             if (!File.Exists(args[0]))
             {
-                Console.WriteLine("Script file not found.");
+                Console.Error.WriteLine("Script file not found.");
                 return;
             }
 
@@ -44,17 +44,17 @@ namespace cscmd
 
             if (results.Errors.Count > 0)
             {
-                Console.WriteLine("Script was not build successfully.");
+                Console.Error.WriteLine("Script was not build successfully.");
                 foreach (CompilerError error in results.Errors)
                 {
-                    Console.WriteLine("    " + error.ToString());
+                    Console.Error.WriteLine("    " + error.ToString());
                 }
                 return;
             }
 
             if (results.CompiledAssembly.EntryPoint == null)
             {
-                Console.WriteLine("No suitbable entry-point found!");
+                Console.Error.WriteLine("No suitable entry-point found!");
                 return;
             }
 
