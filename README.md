@@ -19,4 +19,4 @@ Since cscmd was something I quickly made to solve the problem I had at the time,
 
 * Showing a "Just in Time Debugging" dialog when a script fails during execution. (And allowing Visual Studio to debug the script directly.)
 * Allowing more references to be available to scripts (right now it just allows the ones Visual Studio 2012's Command Line Application template has by default.)
-* Investigating [shebang](http://en.wikipedia.org/wiki/Shebang_(Unix) support on Linux.
+* Investigating [shebang](http://en.wikipedia.org/wiki/Shebang_\(Unix\)) support on Linux.
